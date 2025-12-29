@@ -21,11 +21,12 @@ await context.Database.MigrateAsync();
 
 Console.WriteLine("Database and tables have been created (if they did not exist)");
 
+/*
 // Simple CRUD test
 
 // Read (Get All)
 Console.WriteLine("\n--- List of Books ---");
-var books = await context.Books.ToListAsync();
+books = await context.Books.ToListAsync();
 foreach (var book in books)
 {
     Console.WriteLine($"{book.Id} | {book.Title} | {book.Author} | {book.Year} | {book.Price:C}");
@@ -76,6 +77,24 @@ foreach (var book in books)
     Console.WriteLine($"{book.Id} | {book.Title} | {book.Author} | {book.Year} | {book.Price:C}");
 }
 
-
 Console.WriteLine("CRUD with EF Core and PostgreSQL is working!");
+*/
+
+Console.WriteLine("\n--- List of books with JSONB and Array ---");
+var books = await context.Books.ToListAsync();
+
+foreach (var book in books)
+{
+    Console.WriteLine($"Id: {book.Id}");
+    Console.WriteLine($"Title: {book.Title} ({book.Year}) by {book.Author}");
+    Console.WriteLine($"Price: {book.Price:C}");
+    Console.WriteLine("Genres: " + string.Join(", ", book.Genres));
+    Console.WriteLine("Properties:");
+    foreach (var prop in book.Properties)
+    {
+        Console.WriteLine($"  {prop.Key}: {prop.Value}");
+    }
+    Console.WriteLine("---");
+}
+
 Console.ReadKey();

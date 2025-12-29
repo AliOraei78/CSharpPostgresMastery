@@ -21,3 +21,12 @@ A deep learning project for PostgreSQL with C#
 - Migration created and applied.
 - Connection string in appsettings.json.
 - Full CRUD test successful.
+
+## Day 3 - Advanced Data Types: UUID + JSONB + Array
+
+- UUID as primary key with gen_random_uuid()
+- JSONB column for semi-structured properties (Pages, Publisher, etc.)
+- Text array for genres list
+- EF Core value conversions for Dictionary and List
+- Seed data with complex types
+- Query and display advanced types in console
