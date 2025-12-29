@@ -30,3 +30,15 @@ A deep learning project for PostgreSQL with C#
 - EF Core value conversions for Dictionary and List
 - Seed data with complex types
 - Query and display advanced types in console
+
+## Day 4 - T-SQL Advanced: CTE, Window Functions, Recursive Queries
+
+- Common Table Expressions (CTE) for complex queries
+- Multiple CTEs in single query
+- Window functions:
+  - ROW_NUMBER with PARTITION BY
+  - RANK vs DENSE_RANK vs ROW_NUMBER
+  - LAG/LEAD for previous/next values
+- Recursive CTE for hierarchical data (category tree)
+- UNNEST for array columns in queries
+- Sample data with genres and categories
