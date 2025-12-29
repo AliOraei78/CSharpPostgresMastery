@@ -10,3 +10,14 @@ A deep learning project for PostgreSQL with C#
 - `Books` table created with seed data (3 records)
 - C# connection test using Npgsql completed successfully
 - Simple SELECT query executed from a console application
+
+
+## Day 2 - CRUD with EF Core + PostgreSQL
+
+- Npgsql.EntityFrameworkCore.PostgreSQL integration.
+- AppDbContext with Book model.
+- Seed data in OnModelCreating.
+- Async CRUD operations in console app.
+- Migration created and applied.
+- Connection string in appsettings.json.
+- Full CRUD test successful.
