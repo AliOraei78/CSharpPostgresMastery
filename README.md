@@ -86,3 +86,14 @@ A deep learning project for PostgreSQL with C#
 - Optimistic concurrency control with Version column
 - Best practices: short transactions, consistent access order
 - SAVEPOINT for partial rollback
+
+## Day 9 - Partitioning + Sharding Introduction
+
+- Declarative Partitioning on "Books" by RANGE ("Year")
+- Partitions: 1900-1950, 1951-2000, 2001-2026, Default
+- Performance test: query on recent years only scans relevant partition
+- Fast drop of old data by dropping partition
+- Index creation on partitioned table (inherited by children)
+- Introduction to Sharding vs Partitioning
+- Citus extension mention for distributed PostgreSQL
+- Application-level sharding concept
