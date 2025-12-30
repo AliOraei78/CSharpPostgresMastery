@@ -1,8 +1,8 @@
-# C# PostgreSQL Mastery
+﻿# C# PostgreSQL Mastery
 
 A deep learning project for PostgreSQL with C#
 
-## Day 1 � PostgreSQL Basics + Installation
+## Day 1 – PostgreSQL Basics + Installation
 
 - PostgreSQL 16 installed and running on localhost:5432
 - pgAdmin 4 connected to the local server
@@ -62,3 +62,14 @@ A deep learning project for PostgreSQL with C#
 - EXPLAIN ANALYZE comparison: before vs after indexing
 - Index types: B-Tree (default), GIN (JSON/Array), BRIN (large tables), Partial (conditional)
 - Performance improvement: from Seq Scan to Index Scan
+
+## Day 7 - Query Optimization + EXPLAIN ANALYZE + Vacuum/Autovacuum
+
+- Deep analysis of Execution Plan with EXPLAIN ANALYZE
+- Identifying slow queries (Seq Scan, Filter)
+- Optimization with proper indexes (GIN on JSONB key, GIN on array)
+- Before/after comparison: Seq Scan → Bitmap Index Scan
+- Manual VACUUM and VACUUM ANALYZE
+- Monitoring autovacuum activity
+- Tuning autovacuum parameters per table
+- Maintaining database performance with large data
