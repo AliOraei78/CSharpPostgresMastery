@@ -52,3 +52,13 @@ A deep learning project for PostgreSQL with C#
 - NOT EXISTS for anti-join
 - Execution Plan analysis with EXPLAIN ANALYZE
 - Join optimization: avoiding subqueries in WHERE
+
+## Day 6 - Strategic Indexing in PostgreSQL
+
+- B-Tree indexes on Price, Year, and composite (Author + Year)
+- GIN indexes for JSONB ("Properties") and Array ("Genres")
+- Partial index for expensive books
+- BRIN index for large, ordered data
+- EXPLAIN ANALYZE comparison: before vs after indexing
+- Index types: B-Tree (default), GIN (JSON/Array), BRIN (large tables), Partial (conditional)
+- Performance improvement: from Seq Scan to Index Scan
