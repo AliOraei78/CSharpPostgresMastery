@@ -42,3 +42,13 @@ A deep learning project for PostgreSQL with C#
 - Recursive CTE for hierarchical data (category tree)
 - UNNEST for array columns in queries
 - Sample data with genres and categories
+
+## Day 5 - Advanced Joins + Subqueries + EXISTS vs IN + Execution Plan
+
+- PascalCase table/column names with double quotes
+- INNER, LEFT, SELF JOIN examples
+- Subquery in SELECT (correlated)
+- IN vs EXISTS performance comparison
+- NOT EXISTS for anti-join
+- Execution Plan analysis with EXPLAIN ANALYZE
+- Join optimization: avoiding subqueries in WHERE
