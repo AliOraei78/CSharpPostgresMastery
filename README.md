@@ -73,3 +73,16 @@ A deep learning project for PostgreSQL with C#
 - Monitoring autovacuum activity
 - Tuning autovacuum parameters per table
 - Maintaining database performance with large data
+
+## Day 8 - Transactions + Isolation Levels + Locking
+
+- BEGIN/COMMIT/ROLLBACK transactions
+- Isolation Levels:
+  - Read Committed (default)
+  - Repeatable Read
+  - Serializable (highest isolation)
+- Row-level locking with SELECT FOR UPDATE
+- Deadlock detection and resolution
+- Optimistic concurrency control with Version column
+- Best practices: short transactions, consistent access order
+- SAVEPOINT for partial rollback

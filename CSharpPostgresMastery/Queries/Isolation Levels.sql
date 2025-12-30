@@ -1,0 +1,10 @@
+BEGIN;
+
+UPDATE "BookInventory"
+SET "Stock" = "Stock" - 5
+WHERE "BookId" = '11111111-1111-1111-1111-111111111111';
+
+INSERT INTO "Orders" ("BookId", "Quantity")
+VALUES ('11111111-1111-1111-1111-111111111111', 5);
+
+COMMIT;
