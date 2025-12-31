@@ -97,3 +97,14 @@ A deep learning project for PostgreSQL with C#
 - Introduction to Sharding vs Partitioning
 - Citus extension mention for distributed PostgreSQL
 - Application-level sharding concept
+
+## Day 11 - Monitoring + pg_stat_statements + Slow Query Log
+
+- pg_stat_statements extension enabled
+- shared_preload_libraries configured
+- Top slow queries by total time, mean time, I/O
+- Slow query logging with log_min_duration_statement = 250ms
+- Real-time monitoring without restart using SET
+- Query optimization workflow: pg_stat_statements → EXPLAIN ANALYZE → Index
+- pg_stat_statements_reset() for fresh stats
+- Performance tuning based on real data
